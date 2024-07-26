@@ -20,8 +20,8 @@ class Customer(BaseModel):
     MonthlyCharges: float
     TotalCharges: float
     
-# with open('classifier.pkl', 'rb') as file:
-#     classifier = pickle.load(file)
+with open('classifier.pkl', 'rb') as file:
+    classifier = pickle.load(file)
     
 
 @app.get("/")
