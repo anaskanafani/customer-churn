@@ -20,21 +20,21 @@ class Customer(BaseModel):
     MonthlyCharges: float
     TotalCharges: float
     
-with open('classifier.pkl', 'rb') as file:
-    classifier = pickle.load(file)
+# with open('classifier.pkl', 'rb') as file:
+#     classifier = pickle.load(file)
     
 
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
 
-@app.post("/classify-churn")
-async def predict(customer: Customer):
-    customer = pd.DataFrame([customer.dict()])
-    prediction = classifier.predict(customer)
+# @app.post("/classify-churn")
+# async def predict(customer: Customer):
+#     customer = pd.DataFrame([customer.dict()])
+#     prediction = classifier.predict(customer)
     
-    if prediction[0] == 0:
-        customer = "Not churn"
-    else:
-        customer = "Churn"
-    return {"prediction": customer}
+#     if prediction[0] == 0:
+#         customer = "Not churn"
+#     else:
+#         customer = "Churn"
+#     return {"prediction": customer}
