@@ -10,6 +10,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
+    "https://customer-churn-interface.vercel.app"
 ]
 
 app.add_middleware(
