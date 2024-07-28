@@ -4,11 +4,21 @@ from pydantic import BaseModel
 import pickle
 import pandas as pd
 import json
-from fastapi.responses import FileResponse
-from pathlib import Path
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+origins = [
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class Customer(BaseModel):
     SeniorCitizen: int
