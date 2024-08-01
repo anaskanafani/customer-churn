@@ -14,21 +14,14 @@ The **Customer Churn Prediction** project aims to provide businesses with insigh
 
   
 
-1. Introduction
+1. [Introduction](#1-introduction)
+2. [Frontend Documentation](#2-frontend-documentation)
+3. [Backend Documentation](#3-backend-documentation)
+4. [Machine Learning Models](#4-machine-learning-models)
+5. [Conclusion](#5-conclusion)
 
-2. Frontend Documentation
 
-3. Backend Documentation
-
-4. Machine Learning Models
-
-5. Conclusion
-
-  
-
-## 1. Introduction
-
-  
+## 1. Introduction 
 
 ### Goal
 

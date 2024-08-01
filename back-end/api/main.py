@@ -38,22 +38,22 @@ class Customer(BaseModel):
 
 
 class RegressorCustomer(BaseModel):
-    # SeniorCitizen: int
-    # Partner: int
-    # tenure: int
-    # PhoneService: int
-    # MultipleLines: int
-    # InternetService: int
-    # OnlineSecurity: int
-    # OnlineBackup: int
-    # DeviceProtection: int
-    # TechSupport: int
+    SeniorCitizen: int
+    Partner: int
+    tenure: int
+    PhoneService: int
+    MultipleLines: int
+    InternetService: int
+    OnlineSecurity: int
+    OnlineBackup: int
+    DeviceProtection: int
+    TechSupport: int
     StreamingTV: int
     StreamingMovies: int
-    # Contract: int
-    # PaperlessBilling: int
-    # PaymentMethod: int
-    # MonthlyCharges: float
+    Contract: int
+    PaperlessBilling: int
+    PaymentMethod: int
+    MonthlyCharges: float
     Churn: int
 
 
